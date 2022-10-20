@@ -1,0 +1,22 @@
+#d1, #d2, #d3, #d4{
+  background-color: lightgray;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+div:active {
+  background-color: blue;
+}
+
+div > p {
+  display: none;
+}
+
+div:hover p {
+  display: block;
+  background: red;
+  color: gray;
+}

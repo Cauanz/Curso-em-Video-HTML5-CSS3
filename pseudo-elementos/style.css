@@ -1,0 +1,16 @@
+#depois::after {
+  content:  '[link]';
+  color: black;
+  text-decoration: none;
+}
+
+#antes::before {
+  content: '[link]';
+  color: black;
+  text-decoration: none;
+}
+
+/*
+pseudo-classe = :
+pseudo-elementos = ::
+*/
