@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formulario 004</title>
+</head>
+<body>
+    <h1>Exemplo 004</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadastro.phps" method="get">
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" placeholder="Ex: (00) 0000-0000" autocomplete="tel" required  pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                <!--Expressão regular pattern="^\(\d{2}\)\d{4,5}-\d{4}$" exemplo-->
+            </p>
+            <!--Estudar mais sobre RegEx-->
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
