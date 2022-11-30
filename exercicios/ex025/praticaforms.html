@@ -13,16 +13,17 @@
         div {
             margin: auto;
             background-color: rgba(14, 14, 14, 0.808);
-            color: red;
-            border: 1px solid red;
-            border-radius: 6px;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 7px;
             width: 50%;
+            padding: 8px;
         }
 
     </style>
 </head>
 <body>
-    <div>
+    <!--<div>
         <label for="iname">Nome: </label>
         <input type="button" value="botão">
     </div>
@@ -119,6 +120,45 @@
     <div>
         <label for="isemana">Semana: </label>
         <input type="week" placeholder="Semana?">
+    </div>-->
+
+
+    <h1 style="text-align: center;">CALCULADORA EM TEMPO REAL</h1>
+
+    <div>
+        <label for="in1">Digite um Número: </label>
+        <input type="number" id="in1" required min="0" oninput="Calcula()">
     </div>
+
+    <div>
+        <label for="in2">Digite outro Número: </label>
+        <input type="number" id="in2" required min="0" oninput="Calcula()">
+    </div>
+
+    <div>
+        <label for="isoma">Resultado da Soma em tempo real -> </label>
+        <output id="isoma">0</output>
+    </div>
+    <div>
+        <label for="isub">Resultado da Subtração em tempo real -> </label>
+        <output id="isub">0</output>
+    </div>
+    <div>
+        <label for="ivez">Resultado da Multiplicação em tempo real -> </label>
+        <output id="ivez">0</output>
+    </div>
+    <div>
+        <label for="idiv">Resultado da Divisão em tempo real -> </label>
+        <output id="idiv">0</output>
+    </div>
+    <script>
+        function Calcula(){
+            isoma.innerHTML = Number(in1.value) + Number(in2.value);
+            isub.innerHTML = Number(in1.value) - Number(in2.value);
+            ivez.innerHTML = Number(in1.value) * Number(in2.value);
+            idiv.innerHTML = Number(in1.value) / Number(in2.value);
+        }
+
+    </script>
 </body>
 </html>
