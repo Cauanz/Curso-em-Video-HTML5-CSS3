@@ -2,15 +2,9 @@
 
 /* ESTILO PARA TELAS */
 
-:root {
-    --var01: #849875;
-}
-
-
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--var01);
 }
 
 html {
